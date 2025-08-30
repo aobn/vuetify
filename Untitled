@@ -1,0 +1,7 @@
+// 修改baseURL配置
+const api = axios.create({
+  baseURL: import.meta.env.PROD 
+    ? 'http://117.72.154.155:8080' 
+    : (import.meta.env.VITE_API_BASE_URL || ''),
+  // ... 其他配置
+})
