@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // 创建axios实例
 const api = axios.create({
-  baseURL: process.env.VUE_APP_API_BASE_URL || '',
+  baseURL: import.meta.env.PROD ? '' : (import.meta.env.VITE_API_BASE_URL || ''),
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json'
@@ -17,6 +17,14 @@ api.interceptors.request.use(
     if (token) {
       config.headers.Authorization = `Bearer ${token}`
     }
+    
+    // 为生产环境添加CORS相关头部
+    if (import.meta.env.PROD) {
+      config.headers['Access-Control-Allow-Origin'] = '*'
+      config.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS'
+      config.headers['Access-Control-Allow-Headers'] = 'Content-Type, Authorization'
+    }
+    
     return config
   },
   error => {
