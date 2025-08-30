@@ -1,3 +1,8 @@
+---
+description: 
+globs:
+alwaysApply: true
+---
 # my-rule
 ## 语言模式
 请使用中文
@@ -13,6 +18,7 @@
 1. [text](约定规则/代码编写约定规则.md)
 2. [text](约定规则/代码注释约定规则.md)
 3. [text](约定规则/命名约定规则.md)
+
 
 ## 项目测试文件，快照，截图均保存在test文件夹目录下
 
