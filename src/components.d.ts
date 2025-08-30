@@ -10,10 +10,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     BaseButton: typeof import('./components/common/BaseButton.vue')['default']
-    DialogExample: typeof import('./components/common/DialogExample.vue')['default']
-    DialogExampleDemo: typeof import('./components/common/DialogExampleDemo.vue')['default']
-    GlobalDialog: typeof import('./components/common/GlobalDialog.vue')['default']
-    GlobalDialogContainer: typeof import('./components/common/GlobalDialogContainer.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
