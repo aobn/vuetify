@@ -20,12 +20,7 @@ api.interceptors.request.use(
       config.headers.Authorization = `Bearer ${token}`
     }
     
-    // 为生产环境添加CORS相关头部
-    if (import.meta.env.PROD) {
-      config.headers['Access-Control-Allow-Origin'] = '*'
-      config.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS'
-      config.headers['Access-Control-Allow-Headers'] = 'Content-Type, Authorization'
-    }
+    // CORS头部由后端服务器处理，前端不需要设置
     
     return config
   },
