@@ -1,6 +1,6 @@
 # EdgeOne Pages 重定向规则
 # API代理规则 - 将 /api/* 请求代理到后端服务器
-/api/*  https://117.72.154.155:8080/api/:splat  200
+/api/*  https://117.72.154.155:8443/api/:splat  200
 
 # SPA路由规则 - 所有其他请求返回index.html
 /*    /index.html   200
