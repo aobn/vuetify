@@ -3,7 +3,7 @@ import axios from 'axios'
 // 创建axios实例
 const api = axios.create({
   baseURL: import.meta.env.PROD 
-    ? 'https://117.72.154.155:8443' 
+    ? 'https://db.webdom.0345678.xyz' 
     : (import.meta.env.VITE_API_BASE_URL || ''), 
   timeout: 10000,
   headers: {
