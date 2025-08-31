@@ -86,7 +86,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://117.72.154.155:8080',
+        target: 'https://db.goxi.top',
         changeOrigin: true,
         secure: false,
         configure: (proxy, _options) => {

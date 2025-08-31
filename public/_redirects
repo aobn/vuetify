@@ -1,6 +1,6 @@
 # EdgeOne Pages 重定向规则
 # API代理规则 - 将 /api/* 请求代理到后端服务器
-/api/*  https://db.webdom.0345678.xyz/api/:splat  200
+/api/* https://db.goxi.top/api/:splat  200
 
 # SPA路由规则 - 所有其他请求返回index.html
 /*    /index.html   200

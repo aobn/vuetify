@@ -74,7 +74,7 @@ Access-Control-Allow-Headers: Content-Type, Authorization
 - 首页: https://your-domain.com/
 
 ## 注意事项
-1. 确保API服务器 http://117.72.154.155:8080 可以正常访问
+1. 确保API服务器 https://db.goxi.top:8080 可以正常访问
 2. 检查API服务器的CORS配置
 3. 如果遇到跨域问题，请联系后端开发人员配置CORS
 4. EdgeOne Pages 支持自定义域名绑定

@@ -15,7 +15,7 @@ export default {
   
   // 环境变量
   env: {
-    VITE_API_BASE_URL: 'http://117.72.154.155:8080'
+    VITE_API_BASE_URL: 'https://db.goxi.top'
   },
   
   // 头部配置，处理CORS
